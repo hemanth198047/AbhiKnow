@@ -12,7 +12,7 @@ _Last updated: 2026-11-19_
 | Monorepo skeleton | Implemented | Directories created |
 | Requirements, architecture, data model, roadmap | Implemented | Documents only |
 | Licensing and provider registers | Implemented | Provider terms are **not yet verified** (see PROVIDER_REGISTRY) |
-| V1 database migration | Implemented | **Not yet executed against PostgreSQL** |
+| V1 database migration | Tested | Applied cleanly to PostgreSQL 16 with `ON_ERROR_STOP`; seeds 5 providers |
 | docker-compose (PostgreSQL) | Implemented | Not yet run |
 | Competitive analysis | Implemented | Draft from general knowledge; sources not yet cited |
 
