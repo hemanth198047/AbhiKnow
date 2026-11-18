@@ -31,3 +31,8 @@ dist/
 .idea/
 .vscode/
 storage/
+
+# Build output
+*.tsbuildinfo
+frontend/dist/
+backend/target/

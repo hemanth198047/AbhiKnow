@@ -1,6 +1,6 @@
 # Provider Registry
 
-Every provider needs its terms checked before integration. **Verification column reflects reality: nothing is verified yet.** Facts in "Known constraints" are from general knowledge and must be confirmed against the linked documentation.
+Every provider needs its terms checked before integration. **Trust status stays `PENDING_REVIEW` for every provider: approval is a human decision.** The table below records what was actually checked on 2026-11-19 and what was not.
 
 | Provider | Content | Docs | Auth | Known constraints (to verify) | Trust status | Terms verified |
 |---|---|---|---|---|---|---|
@@ -19,3 +19,20 @@ Sites associated with unauthorized distribution of copyrighted works (for exampl
 ## Adapter requirements
 
 Query translation, pagination, timeouts, retry with exponential backoff, rate limiting, caching, normalization, error isolation, health, usage tracking, provenance.
+
+
+## Review notes, 2026-11-19
+
+What was read from the provider's own pages, and what was observed by calling the API.
+
+| Provider | Read from docs | Observed |
+|---|---|---|
+| OpenAlex | The help site (`help.openalex.org`) confirms keys exist and agents can request one; it did not state limits or license in the page read | Keyless call returned HTTP 429: shared per-IP daily budget used up. Adapter sends `api_key` only when `OPENALEX_API_KEY` is set. License and attribution terms not yet confirmed |
+| Crossref | No sign-up needed; `mailto` selects the polite pool; "almost none of the metadata is subject to copyright", but some abstracts may be | Search and single-DOI routes work. The single-DOI route rejects `select` |
+| arXiv | Required statement: "Thank you to arXiv for use of its open access interoperability." Do not use arXiv names or logos to suggest endorsement. Commercial projects should read the terms and consider affiliation | Atom API works over HTTPS (HTTP redirects). The one-request-per-3-seconds figure was not on the page read; it is applied conservatively and should be checked against the API Terms of Use |
+| Open Library | Identify the app with a User-Agent and contact email: 3 requests/second when identified, 1 when not. Do not use the API for bulk download or as the backend of a high-traffic commercial service | Search works with the `fields` parameter |
+| Project Gutenberg via Gutendex | Not read | Host unreachable from the build sandbox |
+
+Consequences in code: contact email in every User-Agent, request spacing per provider, no bulk crawling (first page per search, cached for 10 minutes), the arXiv attribution in the site footer.
+
+Open question for the owner: Open Library asks that its API not back a high-traffic commercial service. Fine for the first hundred users; revisit before commercial or public launch.
