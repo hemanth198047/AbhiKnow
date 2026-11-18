@@ -1,0 +1,5 @@
+{"count":2,"results":[
+ {"id":11,"title":"Alice's Adventures in Wonderland","authors":[{"name":"Carroll, Lewis","birth_year":1832,"death_year":1898}],"subjects":["Fantasy fiction"],"languages":["en"],"copyright":false,
+  "formats":{"application/epub+zip":"https://www.gutenberg.org/ebooks/11.epub3.images","text/html":"https://www.gutenberg.org/ebooks/11.html.images","text/plain; charset=us-ascii":"https://www.gutenberg.org/ebooks/11.txt.utf-8","image/jpeg":"https://www.gutenberg.org/cache/epub/11/pg11.cover.medium.jpg"}},
+ {"id":99,"title":"Copyright Status Unknown","authors":[],"subjects":[],"languages":["en","fr"],"copyright":null,"formats":{"text/html":"javascript:alert(1)"}}
+]}

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ek3gfQ6bzrn+pTMZA7gk5Q5ELvw</id>
+  <title>arXiv Query: search_query=all:"deep learning"&amp;id_list=&amp;start=0&amp;max_results=3</title>
+  <updated>2026-11-18T19:56:34Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22deep+learning%22&amp;start=0&amp;max_results=3&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>3</opensearch:itemsPerPage>
+  <opensearch:totalResults>69694</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2105.04026v2</id>
+    <title>The Modern Mathematics of Deep Learning</title>
+    <updated>2023-02-08T16:48:49Z</updated>
+    <link href="https://arxiv.org/abs/2105.04026v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2105.04026v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We describe the new field of mathematical analysis of deep learning. This field emerged around a list of research questions that were not answered within the classical framework of learning theory. These questions concern: the outstanding generalization power of overparametrized neural networks, the role of depth in deep architectures, the apparent absence of the curse of dimensionality, the surprisingly successful optimization performance despite the non-convexity of the problem, understanding what features are learned, why deep architectures perform exceptionally well in physical problems, and which fine aspects of an architecture affect the behavior of a learning task in which way. We present an overview of modern approaches that yield partial answers to these questions. For selected approaches, we describe the main ideas in more detail.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-05-09T21:30:42Z</published>
+    <arxiv:comment>A version of this review paper appears as a chapter in the book "Mathematical Aspects of Deep Learning" by Cambridge University Press</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>Mathematical Aspects of Deep Learning, pp. 1-111. Cambridge University Press, 2022</arxiv:journal_ref>
+    <author>
+      <name>Julius Berner</name>
+    </author>
+    <author>
+      <name>Philipp Grohs</name>
+    </author>
+    <author>
+      <name>Gitta Kutyniok</name>
+    </author>
+    <author>
+      <name>Philipp Petersen</name>
+    </author>
+    <arxiv:doi>10.1017/9781009025096.002</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1017/9781009025096.002" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.04143v2</id>
+    <title>Predicting Thrombectomy Recanalization from CT Imaging Using Deep Learning Models</title>
+    <updated>2024-04-17T21:20:14Z</updated>
+    <link href="https://arxiv.org/abs/2302.04143v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.04143v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For acute ischemic stroke (AIS) patients with large vessel occlusions, clinicians must decide if the benefit of mechanical thrombectomy (MTB) outweighs the risks and potential complications following an invasive procedure. Pre-treatment computed tomography (CT) and angiography (CTA) are widely used to characterize occlusions in the brain vasculature. If a patient is deemed eligible, a modified treatment in cerebral ischemia (mTICI) score will be used to grade how well blood flow is reestablished throughout and following the MTB procedure. An estimation of the likelihood of successful recanalization can support treatment decision-making. In this study, we proposed a fully automated prediction of a patient's recanalization score using pre-treatment CT and CTA imaging. We designed a spatial cross attention network (SCANet) that utilizes vision transformers to localize to pertinent slices and brain regions. Our top model achieved an average cross-validated ROC-AUC of 77.33 $\pm$ 3.9\%. This is a promising result that supports future applications of deep learning on CT and CTA for the identification of eligible AIS patients for MTB.</summary>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-08T15:41:21Z</published>
+    <arxiv:comment>Medical Imaging with Deep Learning 2022 accepted short paper Jun 2022</arxiv:comment>
+    <arxiv:primary_category term="eess.IV"/>
+    <arxiv:journal_ref>Medical Imaging with Deep Learning 2022</arxiv:journal_ref>
+    <author>
+      <name>Haoyue Zhang</name>
+    </author>
+    <author>
+      <name>Jennifer S. Polson</name>
+    </author>
+    <author>
+      <name>Eric J. Yang</name>
+    </author>
+    <author>
+      <name>Kambiz Nael</name>
+    </author>
+    <author>
+      <name>William Speier</name>
+    </author>
+    <author>
+      <name>Corey W. Arnold</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1711.00146v1</id>
+    <title>A multitask deep learning model for real-time deployment in embedded systems</title>
+    <updated>2017-10-31T23:59:23Z</updated>
+    <link href="https://arxiv.org/abs/1711.00146v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1711.00146v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose an approach to Multitask Learning (MTL) to make deep learning models faster and lighter for applications in which multiple tasks need to be solved simultaneously, which is particularly useful in embedded, real-time systems. We develop a multitask model for both Object Detection and Semantic Segmentation and analyze the challenges that appear during its training. Our multitask network is 1.6x faster, lighter and uses less memory than deploying the single-task models in parallel. We conclude that MTL has the potential to give superior performance in exchange of a more complex training process that introduces challenges not present in single-task models.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-10-31T23:59:23Z</published>
+    <arxiv:comment>2 pages, 5 figures. Poster presentation at Swedish Symposium on Deep Learning SSDL2017, Stockholm, Sweden. June 20-21, 2017</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <arxiv:journal_ref>Swedish Symposium on Deep Learning 2017</arxiv:journal_ref>
+    <author>
+      <name>Miquel Martí</name>
+    </author>
+    <author>
+      <name>Atsuto Maki</name>
+    </author>
+  </entry>
+</feed>
